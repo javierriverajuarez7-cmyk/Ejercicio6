@@ -19,7 +19,7 @@ public class Calendary extends Widget {
     @Override 
     public String render(){
         DateTimeFormatter format = DateTimeFormatter.ofPattern("EEEE d 'de' MMMM 'de' yyyy", lenguage);
-        return "Hoy es" + LocalDate.now().format(format);
+        return "Hoy es " + LocalDate.now().format(format);
     }
     @Override 
     public String getConfiguration(){

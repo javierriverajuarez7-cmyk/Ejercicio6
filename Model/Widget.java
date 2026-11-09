@@ -25,7 +25,7 @@ public abstract class Widget implements Render, Comparable<Widget> {
 
     public int getMemoryKB() { return memoryKB; }
 
-    public void setMemoryKB(int memoriaKB) { this.memoryKB = Math.max(0, memoryKB); }
+    public void setMemoryKB(int memoryKB) { this.memoryKB = Math.max(0, memoryKB); }
 
     public String getTipy() { return getClass().getSimpleName(); }
 

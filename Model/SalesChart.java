@@ -13,7 +13,7 @@ public class SalesChart extends Widget {
     public String render(){
         StringBuilder sb = new StringBuilder("Ventas por mes: ");
         for(int i = 0; i< salesByMonth.length; i++){
-            sb.append("\n Mes ").append(i + 1).append(": ").append("#" .repeat(salesByMonth[1] / 10)).append("( ").append(") ");
+        sb.append("\n Mes ").append(i + 1).append(": ").append("#".repeat(salesByMonth[i] / 10)).append(" (").append(salesByMonth[i]).append(")");
         }
         return sb.toString();
     }
